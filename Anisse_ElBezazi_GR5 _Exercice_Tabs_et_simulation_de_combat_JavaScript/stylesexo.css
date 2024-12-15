@@ -1,0 +1,38 @@
+.tabs{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.tab{
+    padding:10px 20px;
+    background-color: cadetblue;
+    border: 2px solid black;
+    width: 100%;
+    border-radius: 5px;
+}
+.active{
+    background-color: rgb(40, 148, 152);
+    color: rgb(255, 255, 255) ;
+    transform: scale(1.1);
+}
+
+.contenu1{
+    background-color: rgba(0, 0, 255, 0.438);
+    font-size: 100px;
+}
+.contenu2{
+    background-color: rgba(228, 34, 92, 0.447);
+    font-size: 100px;
+}
+.contenu3{
+    background-color: rgba(6, 127, 10, 0.438);
+    font-size: 100px;
+}
+.contenu{
+display: none;
+}
+.contenu-active{
+    display: block;
+}
+
+

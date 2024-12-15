@@ -1,0 +1,620 @@
+@font-face{
+    font-family:"Saiyan-Sans";
+    src: url("font/Saiyan-Sans.ttf") format("truetype") 
+  }
+  .barre_slide{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 10%;
+  }
+  
+.p1{
+    color: hsl(229, 51%, 53%);
+    font-size: 21px;
+}
+body{
+background-image: url("image/pngtree-dreamy-cute-sky-cartoon-sky-creative-illustration-simple-background-image_2204489.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+min-height: 100vh;
+background-attachment: fixed;
+transition: 1s;
+}
+
+.bod{
+    background-image: url("image/Darkmode_background.jpg");
+    transition: 1s;
+} 
+
+main {
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px;
+        gap: 40px;
+        margin-left: 10%;
+}
+
+.barre_niveau{
+    width: 100% ;
+    height: 5%;
+    background-color: rgb(164, 148, 98);
+   background-size: cover;
+    display: flex;
+    min-height: 40px;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+}
+   
+.catalogue{
+   margin-left: 20px auto;
+    width: 100% ;
+    height: 100%;
+   background-color: rgb(164, 148, 98);
+    background: cover;
+    background-position:center;
+}
+
+.catalogue img {
+    margin: 1%;
+    opacity: 1;
+}
+
+.footer {
+    margin-top: 10%;
+    background-color: chocolate;
+    bottom: 0;
+    margin-top: 10% auto;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-between ;
+    background-attachment: fixed;
+}
+
+.contenu_footer{
+    display: flex;
+    gap: 30px ;
+    
+}
+
+.catalogue img:hover{
+cursor: pointer;
+transform: scale(1.1);
+}
+.Insta:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.barre img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.menu img:hover{
+    cursor: pointer;
+    transition:ease-in-out (0.5s);
+    transform: scale(1.1);
+}
+.compte img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.X:hover{
+    cursor: pointer;
+    
+transform: scale(1.1);
+}
+.haut{
+    display: flex;
+   justify-content: space-between;
+   
+}
+.barre{
+    display: flex;
+ gap: 10px;
+}
+
+
+h1{
+    font-size:60px;
+    color: rgb(230 136 11);
+    font-family:"Saiyan-Sans";
+    text-shadow: 6px 6px 0px rgba(0, 0, 0);
+}
+h2{
+    font-size: 50px;
+    color: rgb(230 136 11);
+    font-family:"Saiyan-Sans";
+    text-shadow: 6px 6px 0px rgba(0, 0, 0);
+}
+h3{
+    font-size:60px;
+    font-family:"Saiyan-Sans";
+    text-align: center;
+    text-shadow: 6px 6px 0px rgba(0, 0, 0);
+}
+.compte{
+display: flex;
+gap: 20px;
+align-items: center;
+}
+p{
+    font-family:"Saiyan-Sans";
+    color: blue;
+    font-size: 40px;
+}
+.mid{
+    display: flex;
+    margin-top: 3%;
+}
+
+
+.menu{
+   display: flex; 
+   flex-direction: column;
+   margin-left: 1%;
+   transform: scale(0.60);
+   height: 659px;
+   color: rgb(230 136 11);
+   
+}
+a{
+    color: rgb(230 136 11);
+    text-decoration: none;
+}
+
+a :hover{
+    color: blue;
+    transform: scale(1.1);
+}
+.carte:hover{
+    cursor: pointer;
+    transform: scale(0.97);
+    opacity: 1;
+}
+
+.slider{
+    position: relative;
+    width: 1150px;
+    height: 596px;
+    overflow: hidden;
+    margin: 20px auto;
+    transform: scale(1.2);
+    transition: 1s;
+    border-radius: 24px;
+}
+
+.cartes{
+    display: flex;
+    transition: 1s;
+}
+.carte{
+    opacity: 0.8;
+    transition: opacity 2s;
+    transition: 1s;
+    transform: scale(0.8);
+}
+.carte img{
+    border-radius: 24px;
+    box-shadow: 6px 6px 18px rgba(0, 0, 0);
+}
+.carte.active{
+    opacity: 1;
+    transform: scale(0.9);
+
+}
+.fin_slider{
+    opacity: 0.7;
+}
+.arrow{
+    position: absolute;
+}
+.arrow:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.arrow.left{
+    width: 288px;
+    height: 40px;
+    left: 0%;
+}
+
+.arrow.right{
+    width: 288px;
+    height: 40px;
+    right: 0%;
+}    
+
+.moon{
+    width: 65px;
+    position: relative;
+    left: 7px;
+    top: 3px;
+    transition: 1s;
+}
+
+.container-button{
+    width: 205px;
+    background: black;
+    height: 72px;
+    border-radius: 47px;
+    border: 6px solid white;
+    transition: 1s;
+}
+.whitebutton{
+    border: 6px solid black;
+    background-color: white;
+    transition: 1s
+}
+
+
+ .switchbutton{
+    width: 65px;
+    position: relative;
+    left: 132px;
+    top: 3px;
+ }
+
+ button{
+    background-color: rgba(249, 252, 255, 0);
+    border-width: 0;
+ }
+ 
+ .fin_slider img{
+    border-radius: 24px;
+    box-shadow: 6px 6px 18px rgba(0, 0, 0);
+    transform: scale(0.8);
+ }
+ .bouton{
+    margin-top: 5%;
+}
+.bouton-bas-formulaire{
+    margin-top: 5%;
+    margin-left: -2%;
+    display: flex;
+    justify-content: space-around;
+    gap: 37%;
+}
+
+ *{
+    font-size: 30px;
+    font-family: 'Saiyan-Sans';
+    }
+    form{
+        background-color: #216bbac2;
+    border-radius: 22px;
+    box-shadow: 3px 5px 6px rgba(0, 0, 0);
+    display: flex;
+    color: rgb(230 136 11);
+    }
+    form > div {
+    margin: 30px 20px;
+    }
+    label {
+    display: block;
+    margin-bottom: 8px;
+    }
+    
+    input {
+    width:100%;
+    }
+    .formulaire{
+      display: flex;
+      justify-content: center;
+}
+form img{
+    width: 50%;
+}
+input[type="file" i] {
+    width: 48%;
+}
+.formulaire_droite{
+    position: relative;
+    right: 18%;
+}
+.haut-formulaire{
+    display: flex;
+    flex-direction: row;
+        justify-content: center;
+}
+.dragon-balls{
+    background-color: orange;
+    width: 141px;
+    border-radius: 38px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.error{
+    border: 2px solid red;
+    color: red;
+}
+
+.succes{
+    border: 2px solid rgb(0, 255, 30);
+    color: rgb(0, 255, 30);
+}
+
+.message-error ul{
+    background-color: #bf060675;
+    color: #e71212c4;
+    border-radius: 20px;    
+}
+.message{
+    width: 35%;
+}
+.message-succes ul{
+    background-color: #0ba92375;
+    color: #36ff04;
+    border-radius: 20px;
+}
+.cookies{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 110px;
+    margin-top: 10px;
+}
+.cookies-label{
+ font-size: 20px;
+}
+.Blue{
+    color:rgb(247, 216, 183);
+    transition: 1s ;
+}
+ @media screen and (max-width:426px){
+    .footer{
+        width: 168%;
+    }
+ }
+ @media screen and (max-width:380px){
+    .footer{
+        width: 192%;
+    }
+ }
+ @media screen and (max-width:321px){
+    .footer{
+        width: 226%;
+    }
+ }
+ @media screen and (max-width:770px){
+    .arrow.right{
+        width: 100px;
+    }    
+    .arrow.left {
+        width: 100px;
+    
+    
+    }
+    }
+   @media screen and (max-width:1024px){  /*Tablette *//*prends en charge tout se qui fait entre 685px et 1045*/
+    .haut{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .barre{
+        gap: 5px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .compte{
+        transform: scale(0.8);
+    }
+    .slider{
+        position: relative;
+    width: 350px;
+    overflow: hidden;
+    margin: 10px auto;
+    }
+    .mid{
+        margin-top: 1%;
+    }
+    .catalogue img{
+        transform: scale(0.6);
+        margin: 0.5%;
+        }
+    .catalogue img:hover{
+            cursor: pointer;
+            transform: scale(0.8);
+    }
+   }
+   
+   @media screen and (min-width:1024px){ /*petit pc*/
+    .haut{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .barre{
+        gap: 5px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+    h2{
+        font-size: 60px;
+    }
+    .compte{
+        transform: scale(0.8);
+    }
+    .slider{
+        position: relative;
+        width: 1035px;
+        overflow: hidden;
+        margin: -23px auto;
+        transform: scale(0.7);
+    }
+    .menu{
+        transform: scale(0.8);
+    }
+    .barre_slide {
+
+        top: -7%;
+    
+   }
+   main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    gap: 40px;
+    margin-left: 0%;
+}
+.arrow.right {
+    width: 224px;
+    height: 39px;
+    right: 16%;
+}
+.arrow.left {
+    width: 224px;
+    height: 39px;
+    left: 16%;
+}
+.dragon-balls{
+    width: 105px;
+}
+.dragon-balls img {
+    width: 39%;
+    
+}
+.p1{
+    font-size: 17px;
+}
+}
+
+   @media screen and (min-width:1300px){ /*FHD*/
+    .haut{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .barre{
+        gap: 5px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+    h2{
+        font-size: 60px;
+    }
+    .compte{
+        transform: scale(1);
+    }
+    .slider{
+        position: relative;
+    width: 1050px;
+    overflow: hidden;
+    margin: 10px auto;
+    transform: scale(1);
+    }
+    .menu{
+        transform: scale(0.9);
+    }
+    .barre_slide {
+    top: -5%;
+   }
+   main {
+    display: flex
+;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    gap: 40px;
+    margin-left: 10%;
+}
+.dragon-balls{
+    width: 141px;
+}
+.dragon-balls img {
+    width: 50%;
+    
+}
+.p1{
+    font-size: 21px;
+}
+}
+
+   @media screen and (min-width:2000px){ /*QHD*/
+    .body{
+        background-size: cover;
+
+    }
+    .haut{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .barre{
+        gap: 5px;
+        position: relative;
+        left: 0%;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+    h2{
+        font-size: 60px;
+    }
+    .compte{
+margin-top: 0;
+    }
+    .slider{
+        position: relative;
+    width: 1050px;
+    overflow: hidden;
+    margin: 10px auto;
+    transform: scale(1.4);
+    }
+    .menu{
+        transform: scale(1);
+    }
+    main {
+        display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 10px;
+            gap: 40px;
+            margin-left: 25%;
+    }
+    .barre_slide {
+        top: 10%;
+   }
+   .footer
+   {
+    margin-top: 12%;
+   }
+.mid{
+    margin-top: 10%;
+}
+.arrow.left{
+    width: 288px;
+    height: 40px;
+    left: 0%;
+}
+
+.arrow.right{
+    width: 288px;
+    height: 40px;
+    right: 0%;
+}    
+
+}
+
+   /*Le site est adapter de 690 pixel de largeur jusqu'a la résolution QHD*/
+    /*Le slider affiche un nombre de carte allant de 1 a 3 selon la resolution de l'appareille*/
+   /*Plus bas qu'une resolution de 690 pixel de largeur je rencontre un probleme avec la commande overflow hidden cachant le slider*/
+   /*Signé Anisse :-) */
