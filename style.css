@@ -14,7 +14,7 @@
     font-size: 21px;
 }
 body{
-background-image: url("image/SkyBack.jpg");
+background-image: url("image/rb_2148804712.png");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -24,7 +24,7 @@ transition: 1s;
 }
 
 .bod{
-    background-image: url("image/Darkmode_background.jpg");
+    background-image: url("image/Backdark.png");
     transition: 1s;
 } 
 
