@@ -43,8 +43,8 @@ darkMode.addEventListener ("click",function(){ /* execute une fonction lorsque m
 
 /*formulaire*/
    let form = document.querySelector("form");
-   let variableemail= document.querySelector("#email");
-   let variablePseudo= document.querySelector("#pseudo");
+   let variableemail= document.querySelector("#email"); /*Selectionne l'élement de mon id email et le met dans un variable nommé variablemail*/
+   let variablePseudo= document.querySelector("#pseudo");/*meme principe */
    let variablePassword= document.querySelector("#password");
    let variablePassword2= document.querySelector("#password2");
    let ListeErreur = document.querySelector(".message-error ul");
@@ -55,13 +55,13 @@ form.addEventListener("submit",function(event){
     Valid = true ;
     
     if (variablePseudo.value.trim().length<6){  /*verifie si le pseudo a moins de 6 caracter */
-        variablePseudo.classList.remove("succes");
-        variablePseudo.classList.add("error");
+        variablePseudo.classList.remove("succes"); /*retire la classe succes a pseudo dans le html */
+        variablePseudo.classList.add("error");/*ajoute la classe error a pseudo dans le html afin de modifier le css */
        ListeErreur.innerHTML += "<li>le pseudo doit comporter au moins 6 caractere</li>";
     }
     else{
-        variablePseudo.classList.remove("error");
-        variablePseudo.classList.add("succes");
+        variablePseudo.classList.remove("error");/*retire la classe error a pseudo dans le html */
+        variablePseudo.classList.add("succes");/*ajoute la classe succes a pseudo dans le html afin de modifier le css */
     }
 
     if(variableemail.value.trim()===""){  /*verifie si le mail est vide */
