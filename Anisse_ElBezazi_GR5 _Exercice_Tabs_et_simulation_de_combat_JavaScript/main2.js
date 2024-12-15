@@ -2,8 +2,8 @@
     class Guerrier{ 
         constructor(attack,precision,vie,nom) 
         {
-            this.attack = attack; 
-            this.precision = precision;
+            this.attack = attack; /*Creation d'argument qui vont se placer au niveau du parametre attack lors de la creation d'objets */
+            this.precision = precision; 
             this.vie = vie; 
             this.nom = nom;
         }  
@@ -22,12 +22,12 @@
     console.log (`${this.nom} a raté son attaque il reste ${ennemie.vie}pv a ${ennemie.nom} `);
     } 
 }
-var Leonard = new Guerrier(10,0.8,100,"Leonard"); 
+var Leonard = new Guerrier(10,0.8,100,"Leonard"); /* Creation d'objets donc de combattants avec leur stats et nom mis a l'aide du constructor */
 var Stuart = new Guerrier(20,0.4,100,"Stuart");
 
 while (Leonard.vie >0 && Stuart.vie >0) { /*tant que les deux on encore de la vie le combat continue */
     console.log("=================new turn=====================")
-Leonard.getAttack(Stuart);
+Leonard.getAttack(Stuart); /* Leonard attaque Stuart (Stuart prends donc la place de ennemie dans la fonction GetAttack) */
 Stuart.getAttack(Leonard);
 console.log("==========================================")
 }
@@ -37,12 +37,12 @@ if  (Leonard.vie <=0 && Stuart.vie <=0){ /*Egalité */
     console.log (`LES DEUX COMBATTANT SONT MORT`);
     console.log("======================================")
 }
-else if (Leonard.vie <= 0){
+else if (Leonard.vie <= 0){ /* Leonard a plus de vie */
     console.log("======================================")
     console.log (`Stuart A GAGNER SON COMBAT `);
     console.log("======================================")
 }   
-else{
+else{ /*les autres condition sont fausse donc stuart gagne */
     console.log("======================================")
     console.log (`Leonard A GAGNER SON COMBAT `);
     console.log("======================================")
